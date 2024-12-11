@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>api Test</title>
+</head>
+<body>
+  
+  <script src=" https://cdn.jsdelivr.net/npm/axios@1.7.9/dist/axios.min.js "></script>
+  <script>
+    console.clear()
+    axios.get('https://jsonplaceholder.typicode.com/users')
+      .then(function(res) {
+        console.log(res);
+      })
+      .catch(function(err) {
+        console.log(err);
+      })
+  </script>
+</body>
+</html>
