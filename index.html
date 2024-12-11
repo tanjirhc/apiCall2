@@ -12,7 +12,9 @@
     console.clear()
     axios.get('https://jsonplaceholder.typicode.com/users')
       .then(function(res) {
-        console.log(res);
+        res.data.forEach(x => {
+          console.log(x);
+        });
       })
       .catch(function(err) {
         console.log(err);
